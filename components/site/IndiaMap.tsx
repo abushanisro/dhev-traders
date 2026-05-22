@@ -78,7 +78,7 @@ export function IndiaMap() {
 
         {/* Tamil Nadu */}
         <Geographies geography={GEO_URL}>
-          {({ geographies }) =>
+          {({ geographies }: { geographies: any[] }) =>
             geographies
               .filter((g) => g.properties.NAME_1 === 'Tamil Nadu')
               .map((geo) => (
