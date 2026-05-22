@@ -3,6 +3,7 @@ import path from 'path'
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  allowedDevOrigins: ['192.168.56.1'],
   turbopack: {
     root: path.resolve(__dirname),
   },
@@ -12,6 +13,13 @@ const nextConfig: NextConfig = {
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
+  async rewrites() {
+    return [
+      // Serve the PNG favicon when browsers auto-request /favicon.ico
+      { source: '/favicon.ico', destination: '/images/favicon.png' },
+    ]
+  },
+
   async headers() {
     return [
       {

@@ -159,6 +159,12 @@ export const metadata: Metadata = {
     'விழுப்புரம் மொத்த விற்பனையாளர்',
   ],
 
+  icons: {
+    icon:      '/images/favicon.png',
+    shortcut:  '/images/favicon.png',
+    apple:     '/images/favicon.png',
+  },
+
   authors:   [{ name: bizName, url: siteUrl }],
   creator:   bizName,
   publisher: bizName,
