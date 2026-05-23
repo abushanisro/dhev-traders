@@ -23,7 +23,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="py-20 md:py-28">
+    <section id="services" className="py-12 md:py-16">
       <div className="container-prose">
 
         <div className="text-center max-w-2xl mx-auto">

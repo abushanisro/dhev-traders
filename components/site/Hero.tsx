@@ -120,10 +120,6 @@ export function Hero() {
               </span>
             </span>
           </h1>
-          <p className="mt-3 text-white text-sm sm:text-base max-w-2xl mx-auto leading-relaxed"
-            style={{ textShadow: '0 0 24px rgba(200,169,91,0.7), 0 0 48px rgba(200,169,91,0.3), 0 2px 10px rgba(0,0,0,0.95)' }}>
-            Dhev Traders powers FMCG brands into 500+ retail outlets across Villupuram, Tindivanam, Gingee and Marakkanam, through owned last-mile delivery, 6 days a week.
-          </p>
         </div>
       </div>
     </section>

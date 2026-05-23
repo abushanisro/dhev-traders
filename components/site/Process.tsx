@@ -49,7 +49,7 @@ export function Process() {
   }, [])
 
   return (
-    <section id="process" ref={sectionRef} className="py-20 md:py-28">
+    <section id="process" ref={sectionRef} className="py-12 md:py-16">
       <div className="container-prose">
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-xs font-bold uppercase tracking-widest text-gold">How We Operate</span>

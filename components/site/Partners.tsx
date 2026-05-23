@@ -14,7 +14,7 @@ export function Partners() {
   const marqueeBrands = [...BRANDS, ...BRANDS]
 
   return (
-    <section id="partners" className="py-20 md:py-28 bg-surface">
+    <section id="partners" className="py-12 md:py-16 bg-surface">
       {/* Header stays constrained */}
       <div className="container-prose">
         <div className="text-center max-w-2xl mx-auto">

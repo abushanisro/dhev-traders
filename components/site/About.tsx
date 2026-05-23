@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export function About() {
   return (
-    <section id="about" className="py-20 md:py-28 bg-surface" aria-label="About Dhev Traders — FMCG Distributor Villupuram">
+    <section id="about" className="py-12 md:py-16 bg-surface" aria-label="About Dhev Traders — FMCG Distributor Villupuram">
       <div className="container-prose grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div>
           <span className="text-xs font-bold uppercase tracking-widest text-gold">About Us</span>
@@ -20,12 +20,13 @@ export function About() {
 
         <div className="fmcg-img-wrap">
           <Image
-            src="/images/fmcg.svg"
+            src="/videos/fmcg.svg"
             alt="FMCG products distributed by Dhev Traders"
             width={570}
             height={760}
             className="fmcg-img"
             sizes="(max-width: 768px) 90vw, 45vw"
+            unoptimized
           />
           {/* Gold shine sweep overlay */}
           <span className="fmcg-shine" aria-hidden="true" />

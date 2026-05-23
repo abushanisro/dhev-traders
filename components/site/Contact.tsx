@@ -57,7 +57,7 @@ export function Contact() {
   ]
 
   return (
-    <section id="contact" className="py-20 md:py-28">
+    <section id="contact" className="py-12 md:py-16">
       <div className="container-prose grid lg:grid-cols-2 gap-12 items-stretch">
         <div>
           <span className="text-xs font-bold uppercase tracking-widest text-gold">Contact</span>

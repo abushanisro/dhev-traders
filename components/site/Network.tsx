@@ -21,7 +21,7 @@ const ops = [
 
 export function Network() {
   return (
-    <section id="network" className="py-20 md:py-28 bg-surface">
+    <section id="network" className="py-12 md:py-16 bg-surface">
       <div className="container-prose">
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-xs font-bold uppercase tracking-widest text-gold">Distribution Network</span>

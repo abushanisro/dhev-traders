@@ -26,17 +26,14 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-background/90 backdrop-blur-md shadow-soft' : 'bg-transparent'
-      }`}
+      className="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-background/90 backdrop-blur-md shadow-soft"
     >
       <div className="container-prose flex items-center justify-between h-16 md:h-20">
         <Link href="/" className="leading-tight">
-          <div className={`font-display font-bold text-lg transition-colors ${scrolled ? 'text-primary' : 'text-gold'}`}
-            style={scrolled ? {} : { textShadow: '0 0 16px rgba(200,169,91,0.6)' }}>
+          <div className="font-display font-bold text-lg text-primary">
             DHEV TRADERS
           </div>
-          <div className={`text-[10px] tracking-widest uppercase transition-colors ${scrolled ? 'text-muted-foreground' : 'text-white/70'}`}>
+          <div className="text-[10px] tracking-widest uppercase text-muted-foreground">
             FMCG Distribution
           </div>
         </Link>
@@ -46,7 +43,7 @@ export function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className={`text-sm font-medium transition-colors hover:text-gold ${scrolled ? 'text-foreground/80' : 'text-white/90'}`}
+              className="text-sm font-medium transition-colors hover:text-gold text-foreground/80"
             >
               {l.label}
             </a>
@@ -60,7 +57,7 @@ export function Navbar() {
         </nav>
 
         <button
-          className={`md:hidden p-2 transition-colors ${scrolled ? 'text-foreground' : 'text-white'}`}
+          className="md:hidden p-2 text-foreground"
           onClick={() => setOpen(!open)}
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}

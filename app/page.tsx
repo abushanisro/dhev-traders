@@ -35,12 +35,12 @@ export default function HomePage() {
       <Navbar />
       <Hero />
       <Stats />
-      <About />
       <Services />
+      <Partners />
+      <About />
       <Process />
       <Network />
       <WhyUs />
-      <Partners />
       <PartnershipCTA />
       <FAQ />
       <Contact />

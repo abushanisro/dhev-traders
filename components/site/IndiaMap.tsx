@@ -142,6 +142,12 @@ export function IndiaMap() {
                 <animate attributeName="opacity"  from="0.4" to="0"   dur="2s" begin="0.5s" repeatCount="indefinite" />
               </circle>
             )}
+            {m.hq && (
+              <>
+                <circle r={50} fill="#C8A95B" opacity={0.12} />
+                <circle r={50} fill="none" stroke="#C8A95B" strokeWidth={2.5} opacity={0.9} filter="url(#glow-strong)" />
+              </>
+            )}
             <circle r={m.hq ? 7 : 5} fill="#C8A95B" opacity={0.25} filter="url(#glow-strong)" />
             <circle r={m.hq ? 5 : 3.5} fill="#C8A95B" filter="url(#glow-soft)" />
             <circle r={m.hq ? 2.5 : 1.8} fill="#ffffff" />

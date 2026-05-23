@@ -11,7 +11,7 @@ const items = [
 
 export function WhyUs() {
   return (
-    <section id="why" className="py-20 md:py-28 bg-primary">
+    <section id="why" className="py-12 md:py-16 bg-primary">
       <div className="container-prose">
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-xs font-bold uppercase tracking-widest text-gold">Why Us</span>

@@ -2,7 +2,7 @@ import { Mail, Phone } from 'lucide-react'
 
 export function PartnershipCTA() {
   return (
-    <section className="py-20 md:py-28 bg-surface" aria-label="Partnership call to action">
+    <section className="py-12 md:py-16 bg-surface" aria-label="Partnership call to action">
       <div className="container-prose">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-primary-dark text-primary-foreground p-10 md:p-16 shadow-card">
           <div className="absolute -top-20 -right-20 h-64 w-64 rounded-full bg-gold/20 blur-3xl" aria-hidden="true" />

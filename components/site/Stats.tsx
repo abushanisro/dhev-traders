@@ -48,7 +48,7 @@ const stats: Array<{ value?: number; suffix?: string; text?: string; label: stri
 
 export function Stats() {
   return (
-    <section className="py-16 md:py-20 bg-primary text-primary-foreground relative overflow-hidden" aria-label="Key statistics">
+    <section className="py-10 md:py-12 bg-primary text-primary-foreground relative overflow-hidden" aria-label="Key statistics">
       <div className="absolute inset-0 opacity-[0.05] [background-image:radial-gradient(circle_at_1px_1px,white_1px,transparent_0)] [background-size:24px_24px]" aria-hidden="true" />
       <div className="container-prose relative">
         <div className="text-center mb-10 md:mb-12">
