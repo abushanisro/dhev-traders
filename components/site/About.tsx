@@ -20,7 +20,7 @@ export function About() {
 
         <div className="fmcg-img-wrap">
           <Image
-            src="/images/fmcg.png"
+            src="/images/fmcg.svg"
             alt="FMCG products distributed by Dhev Traders"
             width={570}
             height={760}

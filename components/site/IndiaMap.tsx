@@ -9,10 +9,6 @@ const HQ: [number, number] = [79.4861, 11.9401]
 const primary = [
   { name: 'Villupuram', coords: [79.4861, 11.9401] as [number, number], hq: true,
     labelX: 0, labelY: -18, anchor: 'middle' as const },
-  { name: 'Tindivanam', coords: [79.6519, 12.2376] as [number, number], hq: false,
-    labelX: 0, labelY: -16, anchor: 'middle' as const },
-  { name: 'Marakkanam', coords: [79.9168, 12.2029] as [number, number], hq: false,
-    labelX: 10, labelY: 0,  anchor: 'start'  as const },
 ]
 
 // Dot-only markers — too close to label without overlap

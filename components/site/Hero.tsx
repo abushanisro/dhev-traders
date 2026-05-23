@@ -74,22 +74,28 @@ export function Hero() {
     >
       {/* Desktop */}
       <div className="hidden md:block absolute inset-0">
-        <LoopingVideo
-          src="/videos/home.mp4"
+        <img
+          src="/videos/home.gif"
           className="absolute inset-0 w-full h-full object-cover"
+          alt=""
+          fetchPriority="high"
+          decoding="async"
         />
       </div>
 
       {/* Mobile */}
       <div className="block md:hidden absolute inset-0">
-        <LoopingVideo
-          src="/videos/mobile.mp4"
+        <img
+          src="/videos/mobile.gif"
           className="absolute inset-0 w-full h-full object-cover object-center"
+          alt=""
+          fetchPriority="high"
+          decoding="async"
         />
       </div>
 
       {/* Headline overlay */}
-      <div className="absolute inset-0 flex items-end justify-center pb-8 md:pb-12 px-4">
+      <div className="absolute inset-0 flex items-end justify-center pb-36 md:pb-12 px-4">
         <div className="text-center fade-up">
           <h1 className="font-display font-bold text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-snug">
             <span

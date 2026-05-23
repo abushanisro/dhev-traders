@@ -38,7 +38,7 @@ export function Footer() {
               </div>
             </div>
             <p className="mt-5 text-sm leading-relaxed max-w-sm text-white/70">
-              Dhev Traders is a trusted FMCG distribution company in Villupuram, Tamil Nadu (605108). We supply 500+ retail outlets across Villupuram, Tindivanam, Gingee and Marakkanam with edible oils, home care and food products, through owned last-mile delivery, 6 days a week. GST: 33ATPPG1745E1ZW
+              Dhev Traders is a trusted FMCG distribution company in Villupuram, Tamil Nadu (605108). We supply 500+ retail outlets across Villupuram with edible oils, home care and food products, through owned last-mile delivery, 6 days a week. GST: 33ATPPG1745E1ZW
             </p>
             <a
               href="#contact"
@@ -109,15 +109,19 @@ export function Footer() {
         <div className="absolute top-0 left-0 right-0 z-10 pointer-events-none"
           style={{ height: '65%', background: 'linear-gradient(to bottom, #05100a 0%, #05100a 15%, transparent 100%)' }} />
 
-        <video
-          src="/videos/footer.mp4"
-          autoPlay muted loop playsInline
+        <img
+          src="/videos/footer.gif"
           className="hidden md:block w-full h-full object-cover object-center"
+          alt=""
+          fetchPriority="low"
+          decoding="async"
         />
-        <video
-          src="/videos/footermobile.mp4"
-          autoPlay muted loop playsInline
+        <img
+          src="/videos/footermobile.gif"
           className="block md:hidden w-full h-full object-cover object-center"
+          alt=""
+          fetchPriority="low"
+          decoding="async"
         />
 
         {/* Divider line + copyright overlaid on video */}
