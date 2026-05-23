@@ -3,9 +3,9 @@ import { Users, HeartHandshake, PackageCheck, MapPinned, Settings, Zap } from 'l
 const items = [
   { icon: Users,          title: '500+ Active Retail Outlets in Villupuram District', desc: 'Wide, engaged retailer base covering kirana stores and modern trade outlets.' },
   { icon: HeartHandshake, title: 'Strong Retailer Trust Built Over Years',            desc: 'Consistent, reliable supply builds long-term loyalty across every beat.' },
-  { icon: PackageCheck,   title: 'Streamlined FMCG Logistics, Zero Gaps',            desc: 'Organised route planning eliminates delays, breakage and stockouts.' },
-  { icon: MapPinned,      title: 'Native Knowledge of Villupuram FMCG Market',       desc: 'Deep understanding of local buying patterns, seasonal demand and retail needs.' },
-  { icon: Settings,       title: 'Predictable, Professional FMCG Execution',         desc: 'Auditable operations with clean invoicing and transparent reporting.' },
+  { icon: PackageCheck,   title: 'Streamlined Logistics, Zero Gaps',                  desc: 'Organised route planning eliminates delays, breakage and stockouts.' },
+  { icon: MapPinned,      title: 'Native Knowledge of Villupuram Market',             desc: 'Deep understanding of local buying patterns, seasonal demand and retail needs.' },
+  { icon: Settings,       title: 'Predictable, Professional Distribution',            desc: 'Auditable operations with clean invoicing and transparent reporting.' },
   { icon: Zap,            title: 'Rapid Brand Activation Across Tamil Nadu',         desc: 'New brand SKUs reach 500+ outlets within days of onboarding.' },
 ]
 
