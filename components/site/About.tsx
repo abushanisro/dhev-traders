@@ -7,14 +7,14 @@ export function About() {
         <div>
           <span className="text-xs font-bold uppercase tracking-widest text-gold">About Us</span>
           <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-            About Dhev Traders: FMCG Distribution Company, Villupuram
+            Built for FMCG. Trusted by retailers.
           </h2>
           <div className="mt-4 h-1 w-16 bg-gold rounded-full" />
           <p className="mt-6 text-muted-foreground leading-relaxed">
-            Dhev Traders is a trusted FMCG distribution company based in Valavanur, Villupuram, Tamil Nadu (605108). We are the operational bridge between national FMCG brands and local retail outlets, delivering stock on time, every time, across Villupuram, Tindivanam, Gingee, Marakkanam, Vikravandi and Mailam.
+            Dhev Traders is an FMCG distribution company operating out of Villupuram, Tamil Nadu. We function as the operational bridge between national FMCG brands and the retail outlets that move their products every single day.
           </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            As an authorised distributor for Aishwarya Oil, Mr. Gold Oils, Nalla Refined Rice Bran Oil, Whooper Washing Liquid and Unibic Cookies, we manage the full distribution cycle, from brand depot intake to retail shelf placement. With 500+ active shopkeepers and 100% owned last-mile delivery, we give FMCG brands a dependable, auditable distribution network in the Villupuram district.
+            Our work isn't about flashy promises — it's stock that arrives on time, invoices that match, retailers who pick up the call, and brands that grow market share month after month. With 500+ active retailers and a tightly run supply chain, we give brands a dependable runway into the local market.
           </p>
         </div>
 

@@ -30,7 +30,7 @@ export function Navbar() {
     >
       <div className="container-prose flex items-center justify-between h-16 md:h-20">
         <Link href="/" className="leading-tight">
-          <div className="font-display font-bold text-lg text-primary">
+          <div className="font-display font-bold text-lg text-gold">
             DHEV TRADERS
           </div>
           <div className="text-[10px] tracking-widest uppercase text-muted-foreground">
