@@ -34,10 +34,10 @@ export default function HomePage() {
     <main className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <Stats />
+      <About />
       <Services />
       <Partners />
-      <About />
+      <Stats />
       <Process />
       <Network />
       <WhyUs />

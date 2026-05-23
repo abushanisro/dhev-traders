@@ -16,7 +16,7 @@ export function WhyUs() {
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-xs font-bold uppercase tracking-widest text-gold">Why Us</span>
           <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-            Why FMCG Brands Choose Dhev Traders as Their Villupuram Distributor
+            Why Brands Should Choose Dhev Traders
           </h2>
           <div className="mt-4 h-1 w-16 bg-gold rounded-full mx-auto" />
         </div>
