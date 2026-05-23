@@ -97,19 +97,27 @@ export function Hero() {
       {/* Headline overlay */}
       <div className="absolute inset-0 flex items-end justify-center pb-36 md:pb-12 px-4">
         <div className="text-center fade-up">
-          <h1
-            className="font-display font-bold text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-snug"
-            style={{ textShadow: '0 0 40px rgba(200,169,91,0.85), 0 0 80px rgba(200,169,91,0.4), 0 2px 12px rgba(0,0,0,0.95)' }}
-          >
-            From warehouses to kirana shelves —{' '}
+          <h1 className="font-display font-bold text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-snug">
             <span
-              className="px-2 py-0.5 rounded-lg"
-              style={{
-                background: 'rgba(200,169,91,0.45)',
-                textShadow: '0 1px 4px rgba(0,0,0,0.8)',
-              }}
+              className="block"
+              style={{ textShadow: '0 0 40px rgba(200,169,91,0.85), 0 0 80px rgba(200,169,91,0.4), 0 2px 12px rgba(0,0,0,0.95)' }}
             >
-              we move FMCG at scale.
+              Trusted FMCG Distributor in
+            </span>
+            <span className="block">
+              <span style={{ textShadow: '0 0 40px rgba(200,169,91,0.85), 0 2px 12px rgba(0,0,0,0.95)' }}>
+                Villupuram,{' '}
+              </span>
+              <span
+                className="px-2 py-0.5 rounded-lg"
+                style={{
+                  background: 'rgba(200,169,91,0.45)',
+                  color: '#ffffff',
+                  textShadow: '0 1px 4px rgba(0,0,0,0.8)',
+                }}
+              >
+                Tamil Nadu
+              </span>
             </span>
           </h1>
         </div>
