@@ -8,7 +8,7 @@ export function Hero() {
     >
       {/* Single video covers both mobile and desktop — avoids 30 MB GIF */}
       <video
-        src="/videos/home.mp4"
+        src="/videos/home.mp4?v=2"
         autoPlay
         muted
         loop
