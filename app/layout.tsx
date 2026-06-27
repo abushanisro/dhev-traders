@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    'Dhev Traders is a trusted FMCG distribution company in Villupuram, Tamil Nadu (605108). We connect 5+ national FMCG brands to 500+ active retail outlets across Villupuram, Tindivanam, Gingee, Marakkanam & more. Authorised distributor of Aishwarya Oil, Mr. Gold Oils, Nalla Refined Rice Bran Oil, Unibic Cookies & Whooper. Same-week delivery. Call +91 89395 91197.',
+    'Dhev Traders is a trusted FMCG distribution company in Villupuram, Tamil Nadu (605108). We connect 5+ national FMCG brands to 500+ active retail outlets across Villupuram, Tindivanam, Gingee, Marakkanam & more. Authorised distributor of Aishwarya Oil, Mr. Gold Oils, Nalla Refined Rice Bran Oil, Unibic Cookies & Whooper. Same-week delivery. Call +91 85248 16197.',
 
   keywords: [
     // ── Primary homepage keywords ──
@@ -460,7 +460,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {
             '@type': 'Question',
             name: 'Who distributes Aishwarya Oil in Villupuram?',
-            acceptedAnswer: { '@type': 'Answer', text: 'Dhev Traders is the authorised distributor of Aishwarya Oil in Villupuram, Tamil Nadu. Contact us at +91 89395 91197 for wholesale and retail partnerships.' },
+            acceptedAnswer: { '@type': 'Answer', text: 'Dhev Traders is the authorised distributor of Aishwarya Oil in Villupuram, Tamil Nadu. Contact us at +91 85248 16197 for wholesale and retail partnerships.' },
           },
           {
             '@type': 'Question',
@@ -480,7 +480,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {
             '@type': 'Question',
             name: 'How to become a retail partner with Dhev Traders in Villupuram?',
-            acceptedAnswer: { '@type': 'Answer', text: 'To become a retail partner with Dhev Traders, call +91 89395 91197 or WhatsApp us. We supply kirana stores, supermarkets and modern trade outlets across Villupuram district with competitive margins and same-week delivery.' },
+            acceptedAnswer: { '@type': 'Answer', text: 'To become a retail partner with Dhev Traders, call +91 85248 16197 or WhatsApp us. We supply kirana stores, supermarkets and modern trade outlets across Villupuram district with competitive margins and same-week delivery.' },
           },
           {
             '@type': 'Question',
@@ -490,12 +490,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {
             '@type': 'Question',
             name: 'Where to buy cooking oil in bulk in Villupuram?',
-            acceptedAnswer: { '@type': 'Answer', text: 'Dhev Traders offers bulk cooking oil supply in Villupuram (605108), Tamil Nadu. We stock Aishwarya Oil, Mr. Gold and Nalla refined oils at wholesale prices. Call +91 89395 91197.' },
+            acceptedAnswer: { '@type': 'Answer', text: 'Dhev Traders offers bulk cooking oil supply in Villupuram (605108), Tamil Nadu. We stock Aishwarya Oil, Mr. Gold and Nalla refined oils at wholesale prices. Call +91 85248 16197.' },
           },
           {
             '@type': 'Question',
             name: 'What is the contact number for FMCG distributor in Villupuram?',
-            acceptedAnswer: { '@type': 'Answer', text: 'Contact Dhev Traders, the largest FMCG distributor in Villupuram, at +91 89395 91197 or WhatsApp on the same number. Email: dhevtrader@gmail.com.' },
+            acceptedAnswer: { '@type': 'Answer', text: 'Contact Dhev Traders, the largest FMCG distributor in Villupuram, at +91 85248 16197 or WhatsApp on the same number. Email: dhevtrader@gmail.com.' },
           },
           {
             '@type': 'Question',
@@ -505,7 +505,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {
             '@type': 'Question',
             name: 'How to get FMCG dealership in Villupuram Tamil Nadu?',
-            acceptedAnswer: { '@type': 'Answer', text: 'To get an FMCG dealership or become a brand distribution partner in Villupuram, Tamil Nadu, contact Dhev Traders at +91 89395 91197. We handle brand onboarding, stock intake, order capture and last-mile delivery.' },
+            acceptedAnswer: { '@type': 'Answer', text: 'To get an FMCG dealership or become a brand distribution partner in Villupuram, Tamil Nadu, contact Dhev Traders at +91 85248 16197. We handle brand onboarding, stock intake, order capture and last-mile delivery.' },
           },
         ],
       },
