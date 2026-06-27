@@ -1,81 +1,21 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
-
-const CROSSFADE_BEFORE = 0.8  // seconds before end to begin fade
-const CROSSFADE_MS     = 800  // fade duration in ms
-
-function LoopingVideo({ src, className }: { src: string; className: string }) {
-  const aRef   = useRef<HTMLVideoElement>(null)
-  const bRef   = useRef<HTMLVideoElement>(null)
-  const active = useRef<'a' | 'b'>('a')  // which video is currently showing
-  const fading = useRef(false)
-
-  useEffect(() => {
-    const a = aRef.current
-    const b = bRef.current
-    if (!a || !b) return
-
-    const crossfade = (from: HTMLVideoElement, to: HTMLVideoElement, next: 'a' | 'b') => {
-      fading.current = true
-      active.current = next          // mark the incoming video as active immediately
-      to.currentTime = 0
-      to.play().catch(() => {})
-      const t0 = performance.now()
-      const tick = (now: number) => {
-        const p = Math.min((now - t0) / CROSSFADE_MS, 1)
-        from.style.opacity = `${1 - p}`
-        to.style.opacity   = `${p}`
-        if (p < 1) {
-          requestAnimationFrame(tick)
-        } else {
-          from.pause()
-          fading.current = false
-        }
-      }
-      requestAnimationFrame(tick)
-    }
-
-    // Single handler — only the active video can trigger a switch
-    const onTimeUpdate = () => {
-      if (fading.current) return
-      const cur  = active.current === 'a' ? a : b
-      const next = active.current === 'a' ? b : a
-      const nextLabel = active.current === 'a' ? 'b' : 'a'
-      if (!cur.duration) return
-      if (cur.currentTime >= cur.duration - CROSSFADE_BEFORE) {
-        crossfade(cur, next, nextLabel)
-      }
-    }
-
-    a.addEventListener('timeupdate', onTimeUpdate)
-    b.addEventListener('timeupdate', onTimeUpdate)
-    return () => {
-      a.removeEventListener('timeupdate', onTimeUpdate)
-      b.removeEventListener('timeupdate', onTimeUpdate)
-    }
-  }, [])
-
-  return (
-    <>
-      <video ref={aRef} src={src} autoPlay muted playsInline preload="auto"
-        className={className} style={{ opacity: 1 }} />
-      <video ref={bRef} src={src}        muted playsInline preload="auto"
-        className={className} style={{ opacity: 0 }} />
-    </>
-  )
-}
-
 export function Hero() {
   return (
     <section
       className="relative w-full h-svh min-h-[100svh] overflow-hidden bg-black"
       aria-label="Hero section"
     >
-      {/* Desktop */}
+      {/* Desktop — single native-loop video; browser handles seamless loop at codec level */}
       <div className="hidden md:block absolute inset-0">
-        <LoopingVideo
+        <video
           src="/videos/home.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/images/hero-warehouse.jpg"
+          preload="metadata"
           className="absolute inset-0 w-full h-full object-cover"
         />
       </div>

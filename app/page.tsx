@@ -1,18 +1,22 @@
 import type { Metadata } from 'next'
+import dynamic from 'next/dynamic'
+import { Suspense } from 'react'
 import { Navbar } from '@/components/site/Navbar'
 import { Hero } from '@/components/site/Hero'
-import { Stats } from '@/components/site/Stats'
 import { About } from '@/components/site/About'
-import { Services } from '@/components/site/Services'
-import { Process } from '@/components/site/Process'
-import { Network } from '@/components/site/Network'
-import { WhyUs } from '@/components/site/WhyUs'
-import { Partners } from '@/components/site/Partners'
-import { PartnershipCTA } from '@/components/site/PartnershipCTA'
-import { FAQ } from '@/components/site/FAQ'
-import { Contact } from '@/components/site/Contact'
-import { Footer } from '@/components/site/Footer'
-import { WhatsAppButton } from '@/components/site/WhatsAppButton'
+
+// Below-fold sections: code-split so they don't block initial paint
+const Services      = dynamic(() => import('@/components/site/Services').then(m => ({ default: m.Services })))
+const Partners      = dynamic(() => import('@/components/site/Partners').then(m => ({ default: m.Partners })))
+const Stats         = dynamic(() => import('@/components/site/Stats').then(m => ({ default: m.Stats })))
+const Process       = dynamic(() => import('@/components/site/Process').then(m => ({ default: m.Process })))
+const Network       = dynamic(() => import('@/components/site/Network').then(m => ({ default: m.Network })))
+const WhyUs         = dynamic(() => import('@/components/site/WhyUs').then(m => ({ default: m.WhyUs })))
+const PartnershipCTA = dynamic(() => import('@/components/site/PartnershipCTA').then(m => ({ default: m.PartnershipCTA })))
+const FAQ           = dynamic(() => import('@/components/site/FAQ').then(m => ({ default: m.FAQ })))
+const Contact       = dynamic(() => import('@/components/site/Contact').then(m => ({ default: m.Contact })))
+const Footer        = dynamic(() => import('@/components/site/Footer').then(m => ({ default: m.Footer })))
+const WhatsAppButton = dynamic(() => import('@/components/site/WhatsAppButton').then(m => ({ default: m.WhatsAppButton })))
 
 export const metadata: Metadata = {
   title: 'Dhev Traders | Trusted FMCG Distributor in Villupuram, Tamil Nadu',
@@ -35,17 +39,19 @@ export default function HomePage() {
       <Navbar />
       <Hero />
       <About />
-      <Services />
-      <Partners />
-      <Stats />
-      <Process />
-      <Network />
-      <WhyUs />
-      <PartnershipCTA />
-      <FAQ />
-      <Contact />
-      <Footer />
-      <WhatsAppButton />
+      <Suspense>
+        <Services />
+        <Partners />
+        <Stats />
+        <Process />
+        <Network />
+        <WhyUs />
+        <PartnershipCTA />
+        <FAQ />
+        <Contact />
+        <Footer />
+        <WhatsAppButton />
+      </Suspense>
     </main>
   )
 }

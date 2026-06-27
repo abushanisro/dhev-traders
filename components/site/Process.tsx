@@ -12,23 +12,30 @@ const steps = [
 
 export function Process() {
   const sectionRef = useRef<HTMLElement>(null)
-  const [active, setActive] = useState(-1)   // -1 = not started
-  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const [active, setActive] = useState(-1)
+  const timersRef = useRef<ReturnType<typeof setTimeout>[]>([])
+
+  const clearAllTimers = () => {
+    timersRef.current.forEach(clearTimeout)
+    timersRef.current = []
+  }
 
   useEffect(() => {
     const section = sectionRef.current
     if (!section) return
 
     const startFlow = () => {
+      clearAllTimers()
       setActive(0)
       steps.forEach((_, i) => {
-        timerRef.current = setTimeout(() => setActive(i), i * 600)
+        timersRef.current.push(setTimeout(() => setActive(i), i * 600))
       })
-      // Reset and loop
-      timerRef.current = setTimeout(() => {
-        setActive(-1)
-        setTimeout(startFlow, 800)
-      }, steps.length * 600 + 1000)
+      timersRef.current.push(
+        setTimeout(() => {
+          setActive(-1)
+          timersRef.current.push(setTimeout(startFlow, 800))
+        }, steps.length * 600 + 1000)
+      )
     }
 
     const obs = new IntersectionObserver(
@@ -44,7 +51,7 @@ export function Process() {
 
     return () => {
       obs.disconnect()
-      if (timerRef.current) clearTimeout(timerRef.current)
+      clearAllTimers()
     }
   }, [])
 
@@ -65,9 +72,8 @@ export function Process() {
         <ol className="mt-16 relative">
           {/* Connector line — desktop only */}
           <div className="absolute left-0 right-0 top-6 h-px bg-border hidden lg:block" aria-hidden="true">
-            {/* Gold water flow */}
             <div
-              className="h-full bg-gold origin-left transition-all"
+              className="h-full bg-gold origin-left"
               style={{
                 transform: `scaleX(${active < 0 ? 0 : active / (steps.length - 1)})`,
                 transition: 'transform 0.55s cubic-bezier(0.4,0,0.2,1)',
@@ -81,7 +87,6 @@ export function Process() {
               const lit = active >= i
               return (
                 <li key={s.n} className="relative list-none">
-                  {/* Step badge */}
                   <div
                     className="h-12 w-12 rounded-xl grid place-items-center font-display font-bold relative z-10 transition-all duration-500"
                     style={{
@@ -96,7 +101,6 @@ export function Process() {
                     {s.n}
                   </div>
 
-                  {/* Vertical connector — mobile/tablet */}
                   {i < steps.length - 1 && (
                     <div className="lg:hidden absolute left-6 top-12 w-px h-6 bg-border overflow-hidden" aria-hidden="true">
                       <div
