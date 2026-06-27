@@ -18,11 +18,11 @@ const faqs = [
   },
   {
     q: 'How can an FMCG brand partner with Dhev Traders?',
-    a: 'FMCG brands can partner with Dhev Traders by emailing dhevtrader@gmail.com or calling +91 89395 91197 to discuss SKU onboarding, pricing, distribution routes and retail reach across Villupuram district.',
+    a: 'FMCG brands can partner with Dhev Traders by emailing dhevtrader@gmail.com or calling +91 85248 16197 to discuss SKU onboarding, pricing, distribution routes and retail reach across Villupuram district.',
   },
   {
     q: 'How to become an FMCG retail partner with Dhev Traders in Villupuram?',
-    a: 'Retail stores in Villupuram and nearby areas can register as a retail partner by contacting Dhev Traders at +91 89395 91197. We offer weekly delivery, credit options and order management support.',
+    a: 'Retail stores in Villupuram and nearby areas can register as a retail partner by contacting Dhev Traders at +91 85248 16197. We offer weekly delivery, credit options and order management support.',
   },
   {
     q: 'What services does Dhev Traders provide as an FMCG distributor?',
@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: 'Where to buy cooking oil in bulk in Villupuram?',
-    a: 'Dhev Traders supplies bulk edible oil including Aishwarya Oil, Mr. Gold Oils and Nalla Refined Rice Bran Oil to retail stores and businesses across Villupuram. Contact: +91 89395 91197.',
+    a: 'Dhev Traders supplies bulk edible oil including Aishwarya Oil, Mr. Gold Oils and Nalla Refined Rice Bran Oil to retail stores and businesses across Villupuram. Contact: +91 85248 16197.',
   },
 ]
 

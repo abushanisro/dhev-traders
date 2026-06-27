@@ -6,30 +6,17 @@ export function Hero() {
       className="relative w-full h-svh min-h-[100svh] overflow-hidden bg-black"
       aria-label="Hero section"
     >
-      {/* Desktop — single native-loop video; browser handles seamless loop at codec level */}
-      <div className="hidden md:block absolute inset-0">
-        <video
-          src="/videos/home.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/images/hero-warehouse.jpg"
-          preload="metadata"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </div>
-
-      {/* Mobile */}
-      <div className="block md:hidden absolute inset-0">
-        <img
-          src="/videos/mobile.gif"
-          className="absolute inset-0 w-full h-full object-cover object-center"
-          alt=""
-          fetchPriority="high"
-          decoding="async"
-        />
-      </div>
+      {/* Single video covers both mobile and desktop — avoids 30 MB GIF */}
+      <video
+        src="/videos/home.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="/images/hero-warehouse.jpg"
+        preload="metadata"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
 
       {/* Headline overlay */}
       <div className="absolute inset-0 flex items-end justify-center pb-36 md:pb-12 px-4">

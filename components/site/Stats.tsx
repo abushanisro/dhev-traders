@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 
 function Counter({ to, suffix = '' }: { to: number; suffix?: string }) {
   const [n, setN] = useState(0)
-  const ref = useRef<HTMLDivElement>(null)
+  const ref = useRef<HTMLElement>(null)
   const started = useRef(false)
 
   useEffect(() => {
@@ -33,17 +33,17 @@ function Counter({ to, suffix = '' }: { to: number; suffix?: string }) {
   }, [to])
 
   return (
-    <div ref={ref} className="font-display font-bold text-3xl md:text-5xl text-gold" aria-label={`${to}${suffix}`}>
+    <dd ref={ref} className="font-display font-bold text-3xl md:text-5xl text-gold" aria-label={`${to}${suffix}`}>
       {n}{suffix}
-    </div>
+    </dd>
   )
 }
 
 const stats: Array<{ value?: number; suffix?: string; text?: string; label: string }> = [
   { value: 500, suffix: '+', label: 'Active Retail Outlets in Villupuram District' },
-  { value: 5, suffix: '+', label: 'Authorised FMCG Brand Partnerships' },
-  { value: 6, suffix: '+', label: 'Days/Week FMCG Delivery in Tamil Nadu' },
-  { text: '100%', label: 'Owned Last-Mile Distribution Fleet' },
+  { value: 5,   suffix: '+', label: 'Authorised FMCG Brand Partnerships' },
+  { value: 6,   suffix: '+', label: 'Days/Week FMCG Delivery in Tamil Nadu' },
+  { text: '100%',             label: 'Owned Last-Mile Distribution Fleet' },
 ]
 
 export function Stats() {
@@ -55,17 +55,20 @@ export function Stats() {
           <span className="text-xs font-bold uppercase tracking-widest text-gold">By the numbers</span>
           <h2 className="mt-2 text-2xl md:text-3xl font-bold">Operational scale you can plan around</h2>
         </div>
+
+        {/* flex-col-reverse keeps <dt> before <dd> in DOM (correct order) while
+            rendering the number visually above the label */}
         <dl className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((s) => (
-            <div key={s.label}>
+            <div key={s.label} className="flex flex-col-reverse items-center gap-2">
               {s.value !== undefined ? (
                 <Counter to={s.value} suffix={s.suffix} />
               ) : (
-                <div className="font-display font-bold text-3xl md:text-5xl text-gold" aria-label={s.text}>
+                <dd className="font-display font-bold text-3xl md:text-5xl text-gold" aria-label={s.text}>
                   {s.text}
-                </div>
+                </dd>
               )}
-              <dt className="mt-2 text-sm md:text-base text-primary-foreground/80 font-medium">
+              <dt className="text-sm md:text-base text-primary-foreground/80 font-medium">
                 {s.label}
               </dt>
             </div>

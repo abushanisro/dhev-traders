@@ -69,8 +69,8 @@ export function Process() {
           </p>
         </div>
 
-        <ol className="mt-16 relative">
-          {/* Connector line — desktop only */}
+        {/* Wrapper div holds the connector line so <ol> only contains <li> */}
+        <div className="mt-16 relative">
           <div className="absolute left-0 right-0 top-6 h-px bg-border hidden lg:block" aria-hidden="true">
             <div
               className="h-full bg-gold origin-left"
@@ -82,11 +82,11 @@ export function Process() {
             />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <ol className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {steps.map((s, i) => {
               const lit = active >= i
               return (
-                <li key={s.n} className="relative list-none">
+                <li key={s.n} className="relative">
                   <div
                     className="h-12 w-12 rounded-xl grid place-items-center font-display font-bold relative z-10 transition-all duration-500"
                     style={{
@@ -123,8 +123,8 @@ export function Process() {
                 </li>
               )
             })}
-          </div>
-        </ol>
+          </ol>
+        </div>
       </div>
     </section>
   )

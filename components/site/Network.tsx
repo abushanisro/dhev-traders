@@ -55,8 +55,8 @@ export function Network() {
                 >
                   <o.icon size={20} style={{ color: '#C8A95B' }} aria-hidden="true" />
                 </div>
-                <h4 className="mt-4 font-display font-bold text-white">{o.title}</h4>
-                <p className="mt-1 text-sm text-white/65 leading-relaxed">{o.desc}</p>
+                <h3 className="mt-4 font-display font-bold text-white">{o.title}</h3>
+                <p className="mt-1 text-sm text-white/80 leading-relaxed">{o.desc}</p>
               </div>
             ))}
           </div>

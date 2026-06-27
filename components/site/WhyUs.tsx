@@ -36,7 +36,7 @@ export function WhyUs() {
               </div>
               <div>
                 <h3 className="font-display font-bold text-white">{it.title}</h3>
-                <p className="mt-1 text-sm text-white/60 leading-relaxed">{it.desc}</p>
+                <p className="mt-1 text-sm text-white/80 leading-relaxed">{it.desc}</p>
               </div>
             </li>
           ))}

@@ -20,13 +20,12 @@ export function About() {
 
         <div className="fmcg-img-wrap">
           <Image
-            src="/videos/fmcg.svg"
+            src="/images/fmcg.png"
             alt="FMCG products distributed by Dhev Traders"
             width={570}
             height={760}
             className="fmcg-img"
             sizes="(max-width: 768px) 90vw, 45vw"
-            unoptimized
           />
           {/* Gold shine sweep overlay */}
           <span className="fmcg-shine" aria-hidden="true" />

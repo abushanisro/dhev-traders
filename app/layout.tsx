@@ -1,7 +1,22 @@
 import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
+import { Poppins, Inter } from 'next/font/google'
 import { Toaster } from 'sonner'
 import './globals.css'
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['500', '600', '700', '800'],
+  variable: '--font-poppins',
+  display: 'swap',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-inter',
+  display: 'swap',
+})
 
 const GA_ID = 'G-W85SG7HME5'
 
@@ -533,7 +548,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   }
 
   return (
-    <html lang="en-IN">
+    <html lang="en-IN" className={`${poppins.variable} ${inter.variable}`}>
       <head>
         {/* Google Tag Manager — afterInteractive keeps it off the critical path */}
         <Script id="gtm" strategy="afterInteractive">{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N6FVMG85');`}</Script>
@@ -543,8 +558,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <link rel="icon" type="image/png" href="/images/favicon.png" />
         <link rel="apple-touch-icon" href="/images/favicon.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta name="format-detection"           content="telephone=yes" />
         <meta name="mobile-web-app-capable"     content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
