@@ -11,10 +11,10 @@ export function About() {
           </h2>
           <div className="mt-4 h-1 w-16 bg-gold rounded-full" />
           <p className="mt-6 text-muted-foreground leading-relaxed">
-            Dhev Traders is an FMCG distribution company operating out of Villupuram, Tamil Nadu. We function as the operational bridge between national FMCG brands and the retail outlets that move their products every single day.
+            At Dhev Traders, we are a trusted wholesale distributor of premium edible oils and FMCG products, serving retailers, wholesalers, supermarkets, hotels, restaurants, and businesses across Tamil Nadu and Puducherry. We are committed to delivering quality products, competitive pricing, reliable service, and timely deliveries to help our customers grow with confidence.
           </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            Our work isn't about flashy promises — it's stock that arrives on time, invoices that match, retailers who pick up the call, and brands that grow market share month after month. With 500+ active retailers and a tightly run supply chain, we give brands a dependable runway into the local market.
+            Driven by quality, trust, and integrity, we work closely with leading brands and business partners to ensure a consistent and efficient supply chain. Our mission is to build long-term relationships by providing exceptional service and becoming one of South India's most trusted FMCG distribution companies.
           </p>
         </div>
 
