@@ -203,21 +203,13 @@ export const metadata: Metadata = {
     siteName:    bizName,
     title:       'Dhev Traders — #1 FMCG & Edible Oil Distributor in Villupuram Tamil Nadu',
     description: 'Largest FMCG & cooking oil distributor in Villupuram (605108). Authorised distributor of Aishwarya Oil, Mr. Gold, Nalla Refined Oil & Unibic. 500+ active retailers. Same-week delivery across Villupuram district.',
-    images: [{
-      url:    'https://www.dhevtraders.com/og-image.png',
-      width:  1200,
-      height: 630,
-      alt:    'Dhev Traders — Largest FMCG & Oil Distributor Villupuram Tamil Nadu',
-      secureUrl: 'https://www.dhevtraders.com/og-image.png',
-      type:   'image/png',
-    }],
   },
 
   twitter: {
     card:        'summary_large_image',
     title:       'Dhev Traders | #1 Oil & FMCG Distributor Villupuram Tamil Nadu',
     description: 'Largest FMCG distributor in Villupuram. Aishwarya Oil, Mr. Gold, Nalla & Unibic distributor. 500+ retailers. Same-week delivery.',
-    images:      ['https://www.dhevtraders.com/og-image.png'],
+    images:      ['https://www.dhevtraders.com/opengraph-image'],
   },
 
   alternates: {

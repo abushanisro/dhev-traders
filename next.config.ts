@@ -65,7 +65,8 @@ const nextConfig: NextConfig = {
           { key: 'Strict-Transport-Security',        value: 'max-age=63072000; includeSubDomains; preload' },
           // Isolate top-level window from cross-origin popups
           { key: 'Cross-Origin-Opener-Policy',       value: 'same-origin' },
-          { key: 'Cross-Origin-Resource-Policy',     value: 'same-origin' },
+          // cross-origin allows social scrapers (WhatsApp/FB/Twitter) to load public images
+          { key: 'Cross-Origin-Resource-Policy',     value: 'cross-origin' },
           // CSP in enforcement mode (not report-only)
           { key: 'Content-Security-Policy',          value: csp },
         ],
