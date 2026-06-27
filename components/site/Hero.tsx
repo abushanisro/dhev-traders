@@ -74,12 +74,9 @@ export function Hero() {
     >
       {/* Desktop */}
       <div className="hidden md:block absolute inset-0">
-        <img
-          src="/videos/home.gif"
+        <LoopingVideo
+          src="/videos/home.mp4"
           className="absolute inset-0 w-full h-full object-cover"
-          alt=""
-          fetchPriority="high"
-          decoding="async"
         />
       </div>
 

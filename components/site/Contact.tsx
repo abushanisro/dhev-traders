@@ -72,7 +72,7 @@ export function Contact() {
           <address className="mt-8 space-y-4 not-italic">
             {[
               { icon: Mail, label: 'Email', value: 'dhevtrader@gmail.com', href: 'mailto:dhevtrader@gmail.com' },
-              { icon: Phone, label: 'Phone', value: '+91 89395 91197', href: 'tel:+918939591197' },
+              { icon: Phone, label: 'Phone', value: '+91 85248 16197', href: 'tel:+918524816197' },
               { icon: MapPin, label: 'Location', value: 'S-4, West Pondy Road, Valavanur, Villupuram – 605108', href: GOOGLE_BUSINESS_URL },
             ].map((c) => (
               <a

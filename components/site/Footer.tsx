@@ -82,8 +82,8 @@ export function Footer() {
               </li>
               <li className="flex gap-3">
                 <Phone size={16} className="mt-0.5 shrink-0" style={{ color: '#C8A95B' }} />
-                <a href="tel:+918939591197" className="hover:text-gold transition-colors">
-                  +91 89395 91197
+                <a href="tel:+918524816197" className="hover:text-gold transition-colors">
+                  +91 85248 16197
                 </a>
               </li>
               <li className="flex gap-3">

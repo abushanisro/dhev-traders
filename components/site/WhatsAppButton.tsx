@@ -1,7 +1,7 @@
 export function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/918939591197"
+      href="https://wa.me/918524816197"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with Dhev Traders on WhatsApp"

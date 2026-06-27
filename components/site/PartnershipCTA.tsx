@@ -25,7 +25,7 @@ export function PartnershipCTA() {
                 <Mail size={18} aria-hidden="true" /> Email Us
               </a>
               <a
-                href="tel:+918939591197"
+                href="tel:+918524816197"
                 className="inline-flex items-center gap-2 rounded-full bg-background/10 border border-primary-foreground/20 text-primary-foreground px-7 py-3.5 font-semibold hover:bg-background/20 transition-colors backdrop-blur"
               >
                 <Phone size={18} aria-hidden="true" /> Call Now

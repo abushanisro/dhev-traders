@@ -313,7 +313,7 @@ export default function NotFound() {
               ← Return Home
             </Link>
             <a
-              href="https://wa.me/918939591197"
+              href="https://wa.me/918524816197"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary"

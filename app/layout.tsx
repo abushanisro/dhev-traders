@@ -7,8 +7,8 @@ const GA_ID = 'G-W85SG7HME5'
 
 const siteUrl   = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.dhevtraders.com'
 const bizName   = 'Dhev Traders'
-const phone     = '+918939591197'
-const whatsapp  = 'https://wa.me/918939591197'
+const phone     = '+918524816197'
+const whatsapp  = 'https://wa.me/918524816197'
 const pincode   = '605108'
 const gst       = '33ATPPG1745E1ZW'
 const lat       = 11.9401
@@ -535,6 +535,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-IN">
       <head>
+        {/* Google Tag Manager */}
+        <Script id="gtm" strategy="beforeInteractive">{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N6FVMG85');`}</Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -556,6 +558,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta property="og:country-name"    content="India" />
       </head>
       <body>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-N6FVMG85"
+            height="0" width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         {children}
         <Toaster richColors position="top-right" />
 

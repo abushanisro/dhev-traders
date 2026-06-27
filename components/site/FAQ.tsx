@@ -94,7 +94,7 @@ export function FAQ() {
             Quick Summary: Dhev Traders
           </h3>
           <p className="text-sm text-foreground leading-relaxed">
-            <strong>Dhev Traders</strong> is a trusted FMCG distribution company in <strong>Villupuram, Tamil Nadu (605108)</strong>, supplying <strong>500+ active retail outlets</strong> across Villupuram, Tindivanam, Gingee, Marakkanam and Vikravandi with edible oil brands and daily FMCG products through 100% owned last-mile delivery — <strong>6+ days a week</strong>. Authorised distributor of <strong>Aishwarya Oil, Mr. Gold Oils, Nalla Refined Rice Bran Oil, Whooper and Unibic Cookies</strong>. Contact: <a href="tel:+918939591197" className="text-primary font-semibold hover:text-gold transition-colors">+91 89395 91197</a> | <a href="mailto:dhevtrader@gmail.com" className="text-primary font-semibold hover:text-gold transition-colors">dhevtrader@gmail.com</a>
+            <strong>Dhev Traders</strong> is a trusted FMCG distribution company in <strong>Villupuram, Tamil Nadu (605108)</strong>, supplying <strong>500+ active retail outlets</strong> across Villupuram, Tindivanam, Gingee, Marakkanam and Vikravandi with edible oil brands and daily FMCG products through 100% owned last-mile delivery — <strong>6+ days a week</strong>. Authorised distributor of <strong>Aishwarya Oil, Mr. Gold Oils, Nalla Refined Rice Bran Oil, Whooper and Unibic Cookies</strong>. Contact: <a href="tel:+918524816197" className="text-primary font-semibold hover:text-gold transition-colors">+91 85248 16197</a> | <a href="mailto:dhevtrader@gmail.com" className="text-primary font-semibold hover:text-gold transition-colors">dhevtrader@gmail.com</a>
           </p>
         </div>
       </div>
