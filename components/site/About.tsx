@@ -11,7 +11,7 @@ export function About() {
           </h2>
           <div className="mt-4 h-1 w-16 bg-gold rounded-full" />
           <p className="mt-6 text-muted-foreground leading-relaxed">
-            At Dhev Traders, we are a trusted wholesale distributor of premium edible oils and FMCG products, serving retailers, wholesalers, supermarkets, hotels, restaurants, and businesses across Tamil Nadu and Puducherry. We are committed to delivering quality products, competitive pricing, reliable service, and timely deliveries to help our customers grow with confidence.
+            At Dhev Traders, we are a trusted wholesale distributor of premium edible oils and FMCG products, serving retailers, wholesalers, supermarkets and businesses across Tamil Nadu and Puducherry. We are committed to delivering quality products, competitive pricing, reliable service, and timely deliveries to help our customers grow with confidence.
           </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
             Driven by quality, trust, and integrity, we work closely with leading brands and business partners to ensure a consistent and efficient supply chain. Our mission is to build long-term relationships by providing exceptional service and becoming one of South India's most trusted FMCG distribution companies.
