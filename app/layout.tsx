@@ -5,7 +5,7 @@ import './globals.css'
 
 const GA_ID = 'G-W85SG7HME5'
 
-const siteUrl   = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://dhevtraders.in'
+const siteUrl   = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.dhevtraders.com'
 const bizName   = 'Dhev Traders'
 const phone     = '+918939591197'
 const whatsapp  = 'https://wa.me/918939591197'
@@ -184,15 +184,17 @@ export const metadata: Metadata = {
   openGraph: {
     type:        'website',
     locale:      'en_IN',
-    url:         siteUrl,
+    url:         'https://www.dhevtraders.com',
     siteName:    bizName,
     title:       'Dhev Traders — #1 FMCG & Edible Oil Distributor in Villupuram Tamil Nadu',
     description: 'Largest FMCG & cooking oil distributor in Villupuram (605108). Authorised distributor of Aishwarya Oil, Mr. Gold, Nalla Refined Oil & Unibic. 500+ active retailers. Same-week delivery across Villupuram district.',
     images: [{
-      url:    '/og-image.png',
+      url:    'https://www.dhevtraders.com/og-image.png',
       width:  1200,
       height: 630,
       alt:    'Dhev Traders — Largest FMCG & Oil Distributor Villupuram Tamil Nadu',
+      secureUrl: 'https://www.dhevtraders.com/og-image.png',
+      type:   'image/png',
     }],
   },
 
@@ -200,12 +202,16 @@ export const metadata: Metadata = {
     card:        'summary_large_image',
     title:       'Dhev Traders | #1 Oil & FMCG Distributor Villupuram Tamil Nadu',
     description: 'Largest FMCG distributor in Villupuram. Aishwarya Oil, Mr. Gold, Nalla & Unibic distributor. 500+ retailers. Same-week delivery.',
-    images:      ['/og-image.png'],
+    images:      ['https://www.dhevtraders.com/og-image.png'],
   },
 
   alternates: {
-    canonical: siteUrl,
-    languages: { 'en-IN': siteUrl, 'ta-IN': siteUrl },
+    canonical: 'https://www.dhevtraders.com',
+    languages: {
+      'en-IN': 'https://www.dhevtraders.com',
+      'ta-IN': 'https://www.dhevtraders.com',
+      'x-default': 'https://www.dhevtraders.com',
+    },
   },
 
   verification: { google: process.env.GOOGLE_SITE_VERIFICATION },

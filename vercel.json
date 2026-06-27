@@ -1,5 +1,19 @@
 {
   "installCommand": "npm install --legacy-peer-deps",
   "buildCommand": "next build",
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "dhevtraders.com" }],
+      "destination": "https://www.dhevtraders.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "dhevtraders.in" }],
+      "destination": "https://www.dhevtraders.com/:path*",
+      "permanent": true
+    }
+  ]
 }
