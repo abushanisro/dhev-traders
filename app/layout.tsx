@@ -18,7 +18,7 @@ const inter = Inter({
   display: 'swap',
 })
 
-const GA_ID = 'G-W85SG7HME5'
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 
 const siteUrl   = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.dhevtraders.com'
 const bizName   = 'Dhev Traders'
@@ -575,18 +575,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Toaster richColors position="top-right" />
 
         {/* Google Analytics GA4 */}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-          strategy="lazyOnload"
-        />
-        <Script id="google-analytics" strategy="lazyOnload">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_ID}');
-          `}
-        </Script>
+        {GA_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="lazyOnload"
+            />
+            <Script id="google-analytics" strategy="lazyOnload">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_ID}');
+              `}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   )
