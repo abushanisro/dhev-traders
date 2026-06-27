@@ -18,7 +18,7 @@ export function Partners() {
       {/* Header stays constrained */}
       <div className="container-prose">
         <div className="text-center max-w-2xl mx-auto">
-          <span className="text-xs font-bold uppercase tracking-widest text-gold">Trusted By</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-primary">Trusted By</span>
           <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             Authorised FMCG Brand Distributor in Villupuram, Tamil Nadu
           </h2>

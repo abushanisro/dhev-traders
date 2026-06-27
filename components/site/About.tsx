@@ -5,7 +5,7 @@ export function About() {
     <section id="about" className="py-12 md:py-16 bg-surface" aria-label="About Dhev Traders — FMCG Distributor Villupuram">
       <div className="container-prose grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div>
-          <span className="text-xs font-bold uppercase tracking-widest text-gold">About Us</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-primary">About Us</span>
           <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             Built for FMCG. Trusted by retailers.
           </h2>

@@ -45,7 +45,7 @@ export function FAQ() {
     <section className="py-12 md:py-16 bg-surface" aria-labelledby="faq-heading">
       <div className="container-prose">
         <div className="text-center max-w-2xl mx-auto">
-          <span className="text-xs font-bold uppercase tracking-widest text-gold">FAQ</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-primary">FAQ</span>
           <h2 id="faq-heading" className="mt-3 text-3xl md:text-4xl font-bold text-foreground">
             Frequently Asked Questions
           </h2>

@@ -59,7 +59,7 @@ export function Process() {
     <section id="process" ref={sectionRef} className="py-12 md:py-16">
       <div className="container-prose">
         <div className="text-center max-w-2xl mx-auto">
-          <span className="text-xs font-bold uppercase tracking-widest text-gold">How We Operate</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-primary">How We Operate</span>
           <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             Our FMCG Distribution Process: Villupuram to Retail Shelf
           </h2>

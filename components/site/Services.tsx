@@ -27,7 +27,7 @@ export function Services() {
       <div className="container-prose">
 
         <div className="text-center max-w-2xl mx-auto">
-          <span className="text-xs font-bold uppercase tracking-widest text-gold">What We Do</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-primary">What We Do</span>
           <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             Distribution services built around the retailer
           </h2>

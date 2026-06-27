@@ -24,7 +24,7 @@ export function Network() {
     <section id="network" className="py-12 md:py-16 bg-surface">
       <div className="container-prose">
         <div className="text-center max-w-2xl mx-auto">
-          <span className="text-xs font-bold uppercase tracking-widest text-gold">Distribution Network</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-primary">Distribution Network</span>
           <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             FMCG Distribution Network: Villupuram District, Tamil Nadu
           </h2>

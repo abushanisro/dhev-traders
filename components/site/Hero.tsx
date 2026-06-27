@@ -16,7 +16,9 @@ export function Hero() {
         poster="/images/hero-warehouse.jpg"
         preload="metadata"
         className="absolute inset-0 w-full h-full object-cover"
-      />
+      >
+        <track kind="captions" srcLang="en" label="No captions" default />
+      </video>
 
       {/* Headline overlay */}
       <div className="absolute inset-0 flex items-end justify-center pb-36 md:pb-12 px-4">

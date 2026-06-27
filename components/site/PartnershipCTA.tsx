@@ -31,8 +31,8 @@ export function PartnershipCTA() {
                 <Phone size={18} aria-hidden="true" /> Call Now
               </a>
             </div>
-            <p className="mt-6 text-sm text-primary-foreground/70">
-              dhevtrader@gmail.com &nbsp;·&nbsp; +91 89395 91197
+            <p className="mt-6 text-sm text-primary-foreground/80">
+              dhevtrader@gmail.com &nbsp;·&nbsp; +91 85248 16197
             </p>
           </div>
         </div>

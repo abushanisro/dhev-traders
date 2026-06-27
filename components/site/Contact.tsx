@@ -60,7 +60,7 @@ export function Contact() {
     <section id="contact" className="py-12 md:py-16">
       <div className="container-prose grid lg:grid-cols-2 gap-12 items-stretch">
         <div>
-          <span className="text-xs font-bold uppercase tracking-widest text-gold">Contact</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-primary">Contact</span>
           <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             Get in Touch
           </h2>

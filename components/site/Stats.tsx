@@ -56,11 +56,17 @@ export function Stats() {
           <h2 className="mt-2 text-2xl md:text-3xl font-bold">Operational scale you can plan around</h2>
         </div>
 
-        {/* flex-col-reverse keeps <dt> before <dd> in DOM (correct order) while
-            rendering the number visually above the label */}
+        {/*
+          DOM order: <dt> FIRST then <dd> — required by dl spec.
+          flex-col-reverse flips visual order so <dd> (number) appears
+          on top and <dt> (label) appears below.
+        */}
         <dl className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((s) => (
             <div key={s.label} className="flex flex-col-reverse items-center gap-2">
+              <dt className="text-sm md:text-base text-primary-foreground/80 font-medium">
+                {s.label}
+              </dt>
               {s.value !== undefined ? (
                 <Counter to={s.value} suffix={s.suffix} />
               ) : (
@@ -68,9 +74,6 @@ export function Stats() {
                   {s.text}
                 </dd>
               )}
-              <dt className="text-sm md:text-base text-primary-foreground/80 font-medium">
-                {s.label}
-              </dt>
             </div>
           ))}
         </dl>
